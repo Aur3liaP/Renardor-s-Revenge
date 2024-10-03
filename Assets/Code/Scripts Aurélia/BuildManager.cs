@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public static BuildManager main;
+
+    [Header("References")]
+    [SerializeField] private GameObject[] towerPrefabs;
+
+    private int selectedTower = 0;
+
+    private void Awake(){
+        main = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public GameObject GetSelectedTower() {
+        return towerPrefabs[selectedTower];
     }
+
+
 }
