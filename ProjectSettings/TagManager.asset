@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Turrets
   - Water
   - UI
   - Enemy
-  - 
+  - Bullet
   - 
   - 
   - 
@@ -42,5 +42,5 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Turrets
-    uniqueID: 525462279
+    uniqueID: 1131732751
     locked: 0
