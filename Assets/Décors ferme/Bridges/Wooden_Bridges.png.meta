@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Wooden_Bridges_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 196
+        width: 94
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee492088f33f0334a98950df6c6b77f7
+      internalID: -1357177211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 195
+        width: 138
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b8d7e9d8b9d76438fda3d67a38e312
+      internalID: -1932738931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 183
+        width: 49
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d409e819a9f67044b650e4ec941ae28
+      internalID: -901565068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 137
+        width: 80
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc6da0d51133f04890d533174f25016
+      internalID: -1608209517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 160
+        width: 94
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8583a826a6b60fa47adf4b5b52317146
+      internalID: -2002718388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_5
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 160
+        width: 138
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f89fa3176222494eae83011588d99dd
+      internalID: -735238338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 64
+        width: 94
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbbe3b2a9b51dd499a45f9dcc9c8de8
+      internalID: 668177885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 64
+        width: 138
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab0eb4ddf2375a4ebac5fa5385fb2c4
+      internalID: 313375872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 30
+        width: 94
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c1895144efa7245ab5ce82d4ac1d6b
+      internalID: -139226480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden_Bridges_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 29
+        width: 138
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081ad8e3cdd5bcb42947e5a38e9ad64f
+      internalID: -1114564146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +329,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wooden_Bridges_0: -1357177211
+      Wooden_Bridges_1: -1932738931
+      Wooden_Bridges_2: -901565068
+      Wooden_Bridges_3: -1608209517
+      Wooden_Bridges_4: -2002718388
+      Wooden_Bridges_5: -735238338
+      Wooden_Bridges_6: 668177885
+      Wooden_Bridges_7: 313375872
+      Wooden_Bridges_8: -139226480
+      Wooden_Bridges_9: -1114564146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
