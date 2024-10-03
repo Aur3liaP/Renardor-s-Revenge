@@ -24,6 +24,10 @@ public class EnnemyMouvement : MonoBehaviour
             if (pathIndex >= LevelManager.main.path.Length) {
                 EnnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
+                EnnemySpawner spawner = FindObjectOfType<EnnemySpawner>();
+                if (spawner != null) {
+                    spawner.EnemyReachedEnd();
+                }
                 return;
             } else {
                 target = LevelManager.main.path[pathIndex];
