@@ -68,14 +68,22 @@ public class EnnemySpawner : MonoBehaviour
     {
         isSpawning = false;
         timeSinceLastSpawn = 0f;
+        currentWave++;
         StartCoroutine(StartWave());
     }
 
-    private void SpawnEnemy()
+private void SpawnEnemy()
+{
+    if (enemyPrefabs[0] != null) 
     {
         GameObject prefabToSpawn = enemyPrefabs[0];
         Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
     }
+    else 
+    {
+        Debug.LogError("Le prefab est manquant ou a été détruit.");
+    }
+}
 
     private int EnemiesPerWave() {
         return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
