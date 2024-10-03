@@ -15,15 +15,26 @@ public class Plot : MonoBehaviour
        startColor = sr.color;
     }
 
-    public void OnMouseEnter() {
+    private void OnMouseEnter() {
         sr.color = hoverColor;
     }
 
-    public void OnMouseExit() {
+    private void OnMouseExit() {
         sr.color = startColor;
     }
 
-    public void OnMouseDown() {
-        Debug.Log("Build Tower Here" + name);
+    private void OnMouseDown() {
+        if (tower != null) return;
+
+        Tower towerToBuild = BuildManager.main.GetSelectedTower();
+
+        if (towerToBuild.cost > LevelManager.main.currency) {
+            Debug.Log("Ypu can't afford this tower");
+            return;
+        }
+
+        LevelManager.main.SpendCurrency(towerToBuild.cost);
+
+        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
     }
 }
