@@ -12,17 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene.unity
     guid: 813658d03845e604c91fc26a9091683d
   - enabled: 1
+    path: Assets/Scenes/Scene Forest.unity
+    guid: 94f2284768d344846950080c038823a5
+  - enabled: 1
     path: Assets/Scenes/TransitionForestVillage.unity
     guid: 8fb69555e60b9d84399ea6caeb49f8b9
   - enabled: 1
+    path: Assets/Scenes/Scn Village.unity
+    guid: b0dfbb5bd4beb5b43a831450c51267d8
+  - enabled: 1
     path: Assets/Scenes/TransitionVillageSewer.unity
     guid: 78d0e5652710a4242ad6fd006d402558
+  - enabled: 1
+    path: Assets/Scenes/Scene Egout.unity
+    guid: d799164384380974ca6f6b96c3f1fdce
   - enabled: 1
     path: Assets/Scenes/TransitionSewerCastle.unity
     guid: 1d25e7ed105ff2145a94a00c8668edb0
   - enabled: 1
     path: Assets/Scenes/Scene Castle.unity
-    guid: a50a4bf852b575144b0692f1ab8ee408
+    guid: 39a85d77633f53349b868f5d478ce91c
   - enabled: 1
     path: Assets/Scenes/EndingScene.unity
     guid: b2c99e19aae9b2c4b8d290b7b094ef94
