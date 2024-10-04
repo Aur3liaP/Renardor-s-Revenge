@@ -3512,6 +3512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7690203234841867777, guid: 5d15bf43cc7d5604880ea32cb46e9df2, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8249223830682639134, guid: 5d15bf43cc7d5604880ea32cb46e9df2, type: 3}
       propertyPath: m_Name
       value: gameOverCanvas
@@ -4993,6 +4997,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158969368}
   m_CullTransparentMesh: 1
+--- !u!1001 &1186227025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2753334966095273507, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_Name
+      value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718439835352824130, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_Volume
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718439835352824130, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8815164be0194434aba26c910b756969, type: 3}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1231.1698
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 725.94586
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.691696
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172024370239610080, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d85c36a38abec8a409a71a9b1bfc7acb, type: 3}
 --- !u!1 &1212059974
 GameObject:
   m_ObjectHideFlags: 0
@@ -21208,11 +21277,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 5590832386448151647, guid: e39969aa2ecf30843882515c731ce948, type: 3}
-  - {fileID: 2468244825409396731, guid: cb22e5ddcecb52d4793e3d778dc86c62, type: 3}
-  - {fileID: 5590832386448151647, guid: e39969aa2ecf30843882515c731ce948, type: 3}
-  - {fileID: 2468244825409396731, guid: cb22e5ddcecb52d4793e3d778dc86c62, type: 3}
-  - {fileID: 5590832386448151647, guid: e39969aa2ecf30843882515c731ce948, type: 3}
+  - {fileID: 1683822867286538487, guid: cc3f7e8d211482b4db7bde84f6725006, type: 3}
+  - {fileID: 1683822867286538487, guid: cc3f7e8d211482b4db7bde84f6725006, type: 3}
+  - {fileID: 1683822867286538487, guid: cc3f7e8d211482b4db7bde84f6725006, type: 3}
+  - {fileID: 1683822867286538487, guid: cc3f7e8d211482b4db7bde84f6725006, type: 3}
+  - {fileID: 1683822867286538487, guid: cc3f7e8d211482b4db7bde84f6725006, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 2
   timeBetweenWaves: 1
@@ -25401,5 +25470,6 @@ SceneRoots:
   - {fileID: 2394387663276215139}
   - {fileID: 526411637}
   - {fileID: 817170648}
-  - {fileID: 931411619}
   - {fileID: 748578724}
+  - {fileID: 931411619}
+  - {fileID: 1186227025}
