@@ -91,7 +91,7 @@ public class EnnemySpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
-        enemiesLeftToSpawn = baseEnemies;
+        enemiesLeftToSpawn = EnemiesPerWave();
     }
 
     private void EndWave()
