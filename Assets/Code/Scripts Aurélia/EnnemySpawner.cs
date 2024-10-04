@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EnnemySpawner : MonoBehaviour
 {
@@ -23,7 +24,10 @@ public class EnnemySpawner : MonoBehaviour
 
     [Header("Scene")]
     [SerializeField] private string sceneWinName;
-    [SerializeField] private string sceneLooseName;
+    // [SerializeField] private string sceneLooseName;
+
+    [Header("UI")]
+    [SerializeField] private Canvas gameOverCanvas;
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
@@ -40,10 +44,19 @@ public class EnnemySpawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartWave());
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.gameObject.SetActive(false);
+        }
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ResetGame();
+        }
+
         if (!isSpawning) return;
 
         timeSinceLastSpawn += Time.deltaTime;
@@ -64,7 +77,8 @@ public class EnnemySpawner : MonoBehaviour
 
         if (enemiesReachedEnd >= enemiesToLoose)
         {
-            EndGameLoose(sceneLooseName);
+            // EndGameLoose(sceneLooseName);
+            EndGameLoose();
         }
     }
 
@@ -103,10 +117,17 @@ public class EnnemySpawner : MonoBehaviour
         Debug.Log("Enemy reached end. Total reached: " + enemiesReachedEnd);
     }
 
-    private void EndGameLoose(string sceneLooseName)
+    // private void EndGameLoose(string sceneLooseName)
+        private void EndGameLoose()
     {
-        Debug.Log("Changement de scène vers : " + sceneLooseName);
-        SceneManager.LoadScene(sceneLooseName);
+        Debug.Log("Changement de scène vers : ");
+        // SceneManager.LoadScene(sceneLooseName);
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.gameObject.SetActive(true);
+        }
+        isSpawning = false;
+        Time.timeScale = 0f;
     }
 
     private void SpawnEnemy()
@@ -118,6 +139,33 @@ public class EnnemySpawner : MonoBehaviour
 
     private int EnemiesPerWave()
     {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultScalingFactor));
+    }
+
+ private void ResetGame()
+    {
+        Debug.Log("Réinitialisation du jeu");
+        DestroyAllEnemies();
+        currentWave = 1;
+        timeSinceLastSpawn = 0f;
+        enemiesAlive = 0;
+        enemiesLeftToSpawn = 0;
+        isSpawning = false;
+        enemiesReachedEnd = 0;
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.gameObject.SetActive(false);
+        }
+        Time.timeScale = 1f; // Reprend le jeu
+        StartCoroutine(StartWave());
+    }
+
+    private void DestroyAllEnemies()
+    {
+        EnnemyMouvement[] enemies = FindObjectsOfType<EnnemyMouvement>();
+        foreach (EnnemyMouvement enemy in enemies)
+        {
+            Destroy(enemy.gameObject);
+        }
     }
 }
