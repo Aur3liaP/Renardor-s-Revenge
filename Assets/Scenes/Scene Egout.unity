@@ -8151,7 +8151,7 @@ Transform:
   m_GameObject: {fileID: 656462470}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.83806175, w: -0.5455755}
-  m_LocalPosition: {x: -3.14, y: 4.99, z: 0}
+  m_LocalPosition: {x: -3.25, y: 5.16, z: 0}
   m_LocalScale: {x: 1, y: 1.0646, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10183,6 +10183,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65efdc98c965e5e458827001937dc143, type: 3}
+--- !u!223 &1360120526 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7242331797454833536, guid: 5d15bf43cc7d5604880ea32cb46e9df2, type: 3}
+  m_PrefabInstance: {fileID: 1063253004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1372851991
 GameObject:
   m_ObjectHideFlags: 0
@@ -10227,7 +10232,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  currency: 0
+  currency: 50
 --- !u!4 &1372851993
 Transform:
   m_ObjectHideFlags: 0
@@ -10256,19 +10261,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 2468244825409396731, guid: ca2d35ed933938a47b4baaf78e6a45ba, type: 3}
-  - {fileID: 5590832386448151647, guid: cc72aa64e741dfb4397f64b62795c620, type: 3}
-  - {fileID: 5590832386448151647, guid: cc72aa64e741dfb4397f64b62795c620, type: 3}
-  - {fileID: 5590832386448151647, guid: cc72aa64e741dfb4397f64b62795c620, type: 3}
-  - {fileID: 2468244825409396731, guid: ca2d35ed933938a47b4baaf78e6a45ba, type: 3}
-  baseEnemies: 8
-  enemiesPerSecond: 2
+  - {fileID: 5590832386448151647, guid: 630f78bc460e32c4f91dca223c2369a3, type: 3}
+  - {fileID: 5590832386448151647, guid: 630f78bc460e32c4f91dca223c2369a3, type: 3}
+  - {fileID: 5590832386448151647, guid: 3384efee7911866488d0b39865b6c4d2, type: 3}
+  - {fileID: 5590832386448151647, guid: 3384efee7911866488d0b39865b6c4d2, type: 3}
+  - {fileID: 5590832386448151647, guid: de011fb1ee2d1024399656aed1074b3c, type: 3}
+  baseEnemies: 12
+  enemiesPerSecond: 3.1
   timeBetweenWaves: 1
-  difficultScalingFactor: 0.85
-  maxWaves: 1
+  difficultScalingFactor: 10.98
+  maxWaves: 5
   enemiesToLoose: 3
-  sceneWinName: Scene Castle
-  gameOverCanvas: {fileID: 0}
+  sceneWinName: TransitionSewerCastle
+  gameOverCanvas: {fileID: 1360120526}
 --- !u!114 &1372851995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10289,7 +10294,7 @@ MonoBehaviour:
     cost: 150
     prefab: {fileID: 4779390007969753044, guid: 6ff05d703d4c6c64192198068554392f, type: 3}
   - name: Denis
-    cost: 350
+    cost: 450
     prefab: {fileID: 4779390007969753044, guid: c556a980d84db6d4792f875b56979883, type: 3}
 --- !u!1 &1384405715
 GameObject:
@@ -10464,7 +10469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 350 $
+  m_text: 450 $
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18738,11 +18743,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2436062570095957577, guid: 44107c916c02eb84d93efd205e0ef7d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.42
+      value: -24.4
       objectReference: {fileID: 0}
     - target: {fileID: 2436062570095957577, guid: 44107c916c02eb84d93efd205e0ef7d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.74
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 2436062570095957577, guid: 44107c916c02eb84d93efd205e0ef7d5, type: 3}
       propertyPath: m_LocalPosition.z
